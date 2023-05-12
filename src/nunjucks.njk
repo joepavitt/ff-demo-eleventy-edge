@@ -2,6 +2,9 @@
     Hello World
     {% edge "liquid" %}
         here's the eleventy data:
-        {{ eleventy }}
+        {{ eleventy | json }}
+        {% abtesting "with input" %}
+            Content inside a shortcode
+        {% endabtesting %}
     {% endedge %}
 </div>

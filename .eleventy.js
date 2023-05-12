@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("json", obj => JSON.stringify(obj, null, 2));
 
   eleventyConfig.addPlugin(EleventyEdgePlugin);
-
+  
   // Probably won’t use this (e.g. `{% edge2 %}`), but future proofing just in case
   // eleventyConfig.addPlugin(EdgePlugin, {
     //   name: "edge2"

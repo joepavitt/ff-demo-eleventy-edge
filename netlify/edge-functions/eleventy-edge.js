@@ -14,6 +14,11 @@ export default async (request, context) => {
     edge.config(eleventyConfig => {
       // Fancier json output
       eleventyConfig.addFilter("json", obj => JSON.stringify(obj, null, 2));
+      
+      eleventyConfig.addPairedAsyncShortcode("abtesting", async function (content, input) {
+        console.log('ab testing shortcode')
+        return `Shortcode: ${content} ${input}`
+      })
     });
 
     return await edge.handleResponse();
