@@ -8,6 +8,7 @@ classes:
 * [Forms](/forms/)
 * [Critical CSS with Repeat View Optimization](/critical-css/)
 * [Use Save-Data to opt-out of Web Fonts](/save-data/)
+* [Nunjucks Page](/nunjucks/)
 
 ## Docs
 
